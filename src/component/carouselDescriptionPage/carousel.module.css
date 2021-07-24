@@ -1,0 +1,131 @@
+/* .MySlide{
+    position: absolute;
+} */
+.Ul{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-self: center;
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+.Img{
+    height: 100%;
+    width: 100%;
+}
+.ButtonLeft , .ButtonRight{
+    position: absolute;
+    display: flex;
+    justify-content:  center;
+    z-index: 100;
+    border-radius: 1.57rem;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+}
+.ButtonLeft{
+    left:5%;
+}
+.ButtonRight{
+    left:calc(95% - 33px);
+}
+.ButtonLeft:hover , .ButtonRight:hover{
+    background-color: #ff9747;
+}
+.ButtonLeft:focus , .ButtonRight:focus{
+    outline: none;
+}
+.Center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+} 
+.Active{
+    position:absolute;
+    left:calc(50% - 250px);
+    opacity:1;
+    height:400px;
+    width:500px;
+    transition:width 1s,height 1s,opacity 1s,left 1s;
+    z-index:10;
+    box-shadow: -10px 15px 46px #0d2436;
+    background-color:#0d2436;
+}
+.PreActive1{
+    position:absolute;
+    left:calc(50% - 370px);
+    opacity:0.5;
+    height:200px;
+    width:200px;
+    transition:width 1s,height 1s,opacity 1s,left 1s;
+    z-index:5;
+    box-shadow: -10px 15px 46px #0d2436;
+    background-color:#0d2436; 
+}
+.PreActive2{
+    position:absolute;
+    left:calc(50% + 170px);
+    opacity:0.5;
+    height:200px;
+    width:200px;
+    transition:width 1s,height 1s,opacity 1s,left 1s;
+    z-index:5;
+    box-shadow: -10px 15px 46px #0d2436;
+    background-color:#0d2436; 
+}
+.NotActive{
+    position:absolute;
+    left:calc(50% - 150px);
+    opacity:0;
+    height:0px;
+    width:0px;
+    transition:width 1s,height 1s,opacity 1s,left 1s;
+    z-index:1;
+    box-shadow: -10px 15px 46px #0d2436;
+    background-color:#0d2436; 
+}
+@media (max-width:1000px){
+    .Ul{
+        height: 300px;
+    }
+    .Active{
+        width: 300px;
+        height: 300px;
+        left:calc(50% - 150px);
+    }
+    .PreActive1{
+        width: 150px;
+        height: 150px;
+        left:calc(50% - 250px);
+    }
+    .PreActive2{
+        width: 150px;
+        height: 150px;
+        left:calc(50% + 100px);
+    }
+}
+@media (max-width:576px){
+    .Ul{
+        height: 200px;
+    }
+    .Active{
+        width: 200px;
+        height: 250px;
+        left:calc(50% - 100px);
+    }
+    .PreActive1{
+        width: 100px;
+        height: 100px;
+        left:calc(50% - 170px);
+    }
+    .PreActive2{
+        width: 100px;
+        height: 100px;
+        left:calc(50% + 70px);
+    }
+}

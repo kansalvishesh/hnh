@@ -1,0 +1,10 @@
+.Contact{
+    height: 500px;
+}
+.Input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 10px;
+    border-radius: 20px;
+}

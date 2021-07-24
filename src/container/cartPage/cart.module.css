@@ -1,0 +1,150 @@
+.Centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Amount{
+    font-weight: 700;
+    font-size: 14px;
+}
+.ProductName{
+    font-weight: 600;
+}
+.Margin{
+    margin: 2%;
+}
+.Light{
+    color: #666;
+    line-height: 1.5;
+}
+.Img2{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
+.Button{
+    background-color: transparent;
+    border: 1.5px solid #31D2F2;
+    color: #31D2F2;
+    font-weight: 500;
+    padding: 10% 0;
+    width: 150px;
+}
+.Button:hover{
+    background-color: #31D2F2;
+    color: white;
+}
+.Img{
+    width: 100px;
+    height: auto;
+}
+.Heading{
+    color: #666;
+    margin-bottom: 2rem;
+}
+.H3{
+    font-size: 30px;
+}
+.Qty{
+    padding: 0 1rem;
+}
+.Li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: whitesmoke;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+.Back{
+    padding-left: 1.5rem;
+}
+.BackToShop{
+    padding: 1rem;
+    cursor: pointer;
+    color: black;
+}
+.BackToShop:hover{
+    background-color: #31D2F2;
+    color: white;
+}
+.Ul{
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.Center{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.Save{
+    color: #31D2F2;
+    font-size: 16px;
+}
+.Button2{
+    width: 100%;
+    color: white;
+    /* background-color: #31D2F2; */
+}
+.Li p{
+    margin-left: .8rem;
+} 
+.Remove{
+    margin-left: .8rem;
+    color: #888;
+    padding: 2%;
+    cursor: pointer;
+}
+.Remove:hover{
+    background-color: #d9d9d9;
+}
+.IncreaseDecrease{
+    display: flex;
+}
+.Container{
+    background-color:white;
+    padding:2%;
+}
+
+@media(max-width:768px){
+    .Li{
+        padding: 1.3rem 0.7rem;
+    }
+    .Img{
+        width: 40px;
+    }
+}
+@media (max-width:576px){
+    .Li{
+        padding: 0.4rem 0;
+    }
+    .IncreaseDecrease{
+        flex-direction: column-reverse;
+    }
+    .Qty{
+        padding: 0.3rem;
+        text-align: center;
+    }
+    .Container{
+        padding: 2% 0;
+    }
+    .Price{
+        font-size: .7rem;
+        text-align: start;
+    }
+    .Amount{
+        font-size: .8rem;
+        font-weight: 600;
+        text-align: end;
+    }
+    .Li p{
+        margin-left: 0.5rem;
+    }.ProductName{
+        padding: 0.6rem;
+        margin-bottom: 0;
+    }
+}

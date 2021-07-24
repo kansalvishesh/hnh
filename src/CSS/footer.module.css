@@ -1,0 +1,10 @@
+.Mylinks{
+   
+    cursor: pointer;
+    color:"black";
+    text-decoration: none;
+
+}
+.Mylinks:active{
+    color:"black"
+}
